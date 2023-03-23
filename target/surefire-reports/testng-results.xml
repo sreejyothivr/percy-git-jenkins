@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8948" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8948" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+      <class name="Example">
+        <test-method status="PASS" signature="getstring()[pri:0, instance:Example@184f6be2]" name="getstring" duration-ms="8899" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getstring -->
+      </class> <!-- Example -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
