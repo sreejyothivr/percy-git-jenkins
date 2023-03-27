@@ -15,18 +15,26 @@ public class Example {
 	@Test
 	public void getstring()
 	{
-	
-//	WebDriver driver;
-//	driver=new ChromeDriver();
-//	Percy percy = new Percy(driver);
-//   driver.get("https://www.google.com/");
-//	System.out.println(driver.getTitle());
-//	percy.snapshot("Java example");
 		
 		 ChromeOptions chromeOptions =new ChromeOptions();
 		    chromeOptions.addArguments("--remote-allow-origins=*");
 		    WebDriver driver =new ChromeDriver(chromeOptions);
 		    Percy percy = new Percy(driver);
 		    driver.get("https://www.saucedemo.com/");
-		    percy.snapshot("Java example");
-	  }}
+		    percy.snapshot("saucedemopage");
+	  }
+	
+	@Test
+	public void getUrl()
+	{
+		
+		 ChromeOptions chromeOptions =new ChromeOptions();
+		    chromeOptions.addArguments("--remote-allow-origins=*");
+		    WebDriver driver =new ChromeDriver(chromeOptions);
+		    Percy percy = new Percy(driver);
+		    driver.get("https://www.tesla.com/");
+		    System.out.println(driver.getCurrentUrl());
+		    percy.snapshot("teslapage");
+	  }
+	
+}
