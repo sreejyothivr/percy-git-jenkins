@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8948" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+  <suite started-at="2023-03-27T19:01:37 IST" name="Parrallel Testing" finished-at="2023-03-27T19:01:44 IST" duration-ms="6965">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8948" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+    <test started-at="2023-03-27T19:01:37 IST" name="My Test suite" finished-at="2023-03-27T19:01:44 IST" duration-ms="6965">
       <class name="Example">
-        <test-method status="PASS" signature="getstring()[pri:0, instance:Example@184f6be2]" name="getstring" duration-ms="8899" started-at="2023-03-03T11:31:45 IST" finished-at="2023-03-03T11:31:54 IST">
+        <test-method signature="getstring()[pri:0, instance:Example@3a6bb9bf]" started-at="2023-03-27T19:01:37 IST" name="getstring" finished-at="2023-03-27T19:01:42 IST" duration-ms="4543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstring -->
+        <test-method signature="getUrl()[pri:0, instance:Example@3a6bb9bf]" started-at="2023-03-27T19:01:37 IST" name="getUrl" finished-at="2023-03-27T19:01:44 IST" duration-ms="6924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
       </class> <!-- Example -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- My Test suite -->
+  </suite> <!-- Parrallel Testing -->
 </testng-results>
