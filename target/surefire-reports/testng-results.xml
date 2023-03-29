@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-27T19:01:37 IST" name="Parrallel Testing" finished-at="2023-03-27T19:01:44 IST" duration-ms="6965">
+  <suite started-at="2023-03-29T11:52:01 IST" name="Parrallel Testing" finished-at="2023-03-29T11:52:11 IST" duration-ms="10853">
     <groups>
     </groups>
-    <test started-at="2023-03-27T19:01:37 IST" name="My Test suite" finished-at="2023-03-27T19:01:44 IST" duration-ms="6965">
+    <test started-at="2023-03-29T11:52:01 IST" name="My Test suite2" finished-at="2023-03-29T11:52:11 IST" duration-ms="10644">
       <class name="Example">
-        <test-method signature="getstring()[pri:0, instance:Example@3a6bb9bf]" started-at="2023-03-27T19:01:37 IST" name="getstring" finished-at="2023-03-27T19:01:42 IST" duration-ms="4543" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Example@71238fc2]" started-at="2023-03-29T11:52:01 IST" name="setup" finished-at="2023-03-29T11:52:05 IST" duration-ms="4238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getstring -->
-        <test-method signature="getUrl()[pri:0, instance:Example@3a6bb9bf]" started-at="2023-03-27T19:01:37 IST" name="getUrl" finished-at="2023-03-27T19:01:44 IST" duration-ms="6924" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="sauceDemoLaunch()[pri:0, instance:Example@71238fc2]" started-at="2023-03-29T11:52:05 IST" name="sauceDemoLaunch" finished-at="2023-03-29T11:52:06 IST" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUrl -->
+        </test-method> <!-- sauceDemoLaunch -->
+        <test-method signature="teslaLaunch()[pri:0, instance:Example@71238fc2]" started-at="2023-03-29T11:52:06 IST" name="teslaLaunch" finished-at="2023-03-29T11:52:11 IST" duration-ms="4975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teslaLaunch -->
       </class> <!-- Example -->
-    </test> <!-- My Test suite -->
+    </test> <!-- My Test suite2 -->
+    <test started-at="2023-03-29T11:52:01 IST" name="My Test suite1" finished-at="2023-03-29T11:52:11 IST" duration-ms="10853">
+      <class name="Example">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Example@15bbf42f]" started-at="2023-03-29T11:52:01 IST" name="setup" finished-at="2023-03-29T11:52:05 IST" duration-ms="4238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sauceDemoLaunch()[pri:0, instance:Example@15bbf42f]" started-at="2023-03-29T11:52:05 IST" name="sauceDemoLaunch" finished-at="2023-03-29T11:52:06 IST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauceDemoLaunch -->
+        <test-method signature="teslaLaunch()[pri:0, instance:Example@15bbf42f]" started-at="2023-03-29T11:52:06 IST" name="teslaLaunch" finished-at="2023-03-29T11:52:11 IST" duration-ms="5144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teslaLaunch -->
+      </class> <!-- Example -->
+    </test> <!-- My Test suite1 -->
   </suite> <!-- Parrallel Testing -->
 </testng-results>
