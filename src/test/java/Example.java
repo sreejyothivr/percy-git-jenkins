@@ -38,7 +38,7 @@ public class Example {
 
 		driver.get("https://www.google.com/");
 		System.out.println(driver.getCurrentUrl());
-		percy.snapshot("teslapage");
+		percy.snapshot("google page");
 	}
 
 }
