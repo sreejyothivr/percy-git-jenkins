@@ -2,7 +2,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.percy.selenium.Percy;
@@ -12,14 +14,27 @@ public class Example {
 	WebDriver driver;
 	Percy percy;
 
-	@BeforeTest
-	public void setup() {
-
-		ChromeOptions chromeOptions = new ChromeOptions();
+	@Parameters("Browser")
+	@BeforeTest(alwaysRun = true)
+	
+	public void setup(String browser) {
+		if (browser.equals("edge")) {
+//		ChromeOptions chromeOptions = new ChromeOptions();
+//		chromeOptions.addArguments("--remote-allow-origins=*");
+			driver=new EdgeDriver();
+		//driver = new ChromeDriver(chromeOptions);
+		percy = new Percy(driver);
+		}
+		
+		else if(browser.equals("chrome"))
+	{
+			//driver=new ChromeDriver();
+//		percy = new Percy(driver);
+			ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(chromeOptions);
-		percy = new Percy(driver);
-
+			
+		}
 	}
 
 	@Test
