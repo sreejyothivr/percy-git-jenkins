@@ -10,7 +10,7 @@
 	<test name="My Test suite2" >
 	<parameter name="Browser" value="chrome"></parameter>
  <classes>
-      <class name="Example"/>
+      <class name="Example2"/>
 
    </classes>
 	</test>
