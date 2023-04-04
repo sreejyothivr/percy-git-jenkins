@@ -30,12 +30,13 @@ public class Example {
 
 		driver.get("https://www.saucedemo.com/");
 		percy.snapshot("saucedemopage");
+		
 	}
 
 	@Test
 	public void teslaLaunch() {
 
-		driver.get("https://www.tesla.com/");
+		driver.get("https://www.google.com/");
 		System.out.println(driver.getCurrentUrl());
 		percy.snapshot("teslapage");
 	}
