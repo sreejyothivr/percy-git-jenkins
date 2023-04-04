@@ -1,4 +1,4 @@
-<suite name="Parrallel Testing"   >
+<suite name="Parrallel Testing"  parallel="tests" thread-count="2" >
 	<test name="My Test suite1" >
 	<parameter name="Browser" value="edge"></parameter>
  <classes>
