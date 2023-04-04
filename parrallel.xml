@@ -2,11 +2,7 @@
 	<test name="My Test suite1" >
  <classes>
       <class name="Example"/>
-   </classes>
-	</test>
-	<test name="My Test suite2">
- <classes>
-      <class name="Example"/>
+
    </classes>
 	</test>
 </suite>
