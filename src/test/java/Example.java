@@ -23,7 +23,7 @@ public class Example {
 //		chromeOptions.addArguments("--remote-allow-origins=*");
 			driver=new EdgeDriver();
 		//driver = new ChromeDriver(chromeOptions);
-		percy = new Percy(driver);
+		
 		}
 		
 		else if(browser.equals("chrome"))
@@ -35,6 +35,7 @@ public class Example {
 		driver = new ChromeDriver(chromeOptions);
 			
 		}
+		percy = new Percy(driver);
 	}
 
 	@Test
