@@ -48,8 +48,9 @@ public class Example {
 //		    chromeOptions.addArguments("--remote-allow-origins=*");
 		driver=new EdgeDriver();
 		percy = new Percy(driver);
-		driver.get("https://saucelabs.com/");
+		driver.get("https://saucelabs.com");
 		percy.snapshot("saucedemopage");
+		System.out.println("Hello");
 		//driver.close();
 	}
 
@@ -59,7 +60,7 @@ public class Example {
 		chromeOptions.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(chromeOptions);
 		percy = new Percy(driver);
-		driver.get("https://www.qburst.com/");
+		driver.get("https://www.qburst.com");
 		System.out.println(driver.getCurrentUrl());
 		percy.snapshot("Qburst page");
 		//driver.close();
