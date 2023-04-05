@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Parrallel_Testing" class="navigator-link">
-              <span class="suite-name border-passed">Parrallel Testing</span>
+              <span class="suite-name border-failed">Parrallel Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parrallel_Testing" class="hide-methods failed suite-Parrallel_Testing"> (hide)</a> <!-- hide-methods failed suite-Parrallel_Testing -->
+                      <a href="#" panel-name="suite-Parrallel_Testing" class="show-methods failed suite-Parrallel_Testing"> (show)</a> <!-- show-methods failed suite-Parrallel_Testing -->
+                    </span>
+                    <div class="method-list-content failed suite-Parrallel_Testing">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parrallel_Testing" title="Example" class="method navigator-link" hash-for-method="teslaLaunch">teslaLaunch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parrallel_Testing -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,11 +119,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Parrallel_Testing" title="Example" class="method navigator-link" hash-for-method="sauceDemoLaunch">sauceDemoLaunch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parrallel_Testing" title="Example" class="method navigator-link" hash-for-method="teslaLaunch">teslaLaunch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Parrallel_Testing -->
@@ -124,6 +133,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Parrallel_Testing" class="panel Parrallel_Testing">
+          <div class="suite-Parrallel_Testing-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Example</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="teslaLaunch">
+                  </a> <!-- teslaLaunch -->
+                  <span class="method-name">teslaLaunch</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c9da2ff8854339cf09e050c1e8bd092, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, ms:edgeOptions: {debuggerAddress: localhost:53234}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\SREEJY~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53234/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c9da2ff8854339cf09e050c1e8bd092
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:309)
+	at Example.teslaLaunch(Example.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parrallel_Testing-class-failed -->
           <div class="suite-Parrallel_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -137,13 +186,6 @@
                   <span class="method-name">sauceDemoLaunch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="teslaLaunch">
-                  </a> <!-- teslaLaunch -->
-                  <span class="method-name">teslaLaunch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Parrallel_Testing-class-passed -->
         </div> <!-- panel Parrallel_Testing -->
@@ -155,7 +197,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Parrallel Testing&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Parrallel Testing&quot;&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;My Test suite1&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -203,16 +245,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'teslaLaunch')
 data.setCell(0, 2, 'Example')
-data.setCell(0, 3, 5650);
+data.setCell(0, 3, 8622);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sauceDemoLaunch')
 data.setCell(1, 2, 'Example')
-data.setCell(1, 3, 5628);
+data.setCell(1, 3, 8595);
 window.suiteTableData['Parrallel_Testing']= { tableData: data, tableDiv: 'times-div-Parrallel_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Parrallel_Testing">
               </div> <!-- times-div-Parrallel_Testing -->
             </div> <!-- times-div -->
@@ -244,6 +286,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teslaLaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

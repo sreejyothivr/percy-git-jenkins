@@ -9,11 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Parrallel Testing</th></tr>
-<tr><td><a href="#t0">My Test suite1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,699</td><td></td><td></td></tr>
+<tr><td><a href="#t0">My Test suite1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,670</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parrallel Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">My Test suite1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Example</td><td><a href="#m0">sauceDemoLaunch</a></td><td rowspan="1">1680616265580</td><td rowspan="1">5628</td></tr><tr class="passedeven"><td><a href="#m1">teslaLaunch</a></td><td rowspan="1">1680616265580</td><td rowspan="1">5650</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parrallel Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">My Test suite1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Example</td><td><a href="#m0">teslaLaunch</a></td><td rowspan="1">1680662362226</td><td rowspan="1">8622</td></tr><tr><th colspan="4">My Test suite1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Example</td><td><a href="#m1">sauceDemoLaunch</a></td><td rowspan="1">1680662362226</td><td rowspan="1">8595</td></tr></tbody>
 </table>
-<h2>My Test suite1</h2><h3 id="m0">Example#sauceDemoLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Example#teslaLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>My Test suite1</h2><h3 id="m0">Example#teslaLaunch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=111.0.1661.62)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9c9da2ff8854339cf09e050c1e8bd092, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, ms:edgeOptions: {debuggerAddress: localhost:53234}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\SREEJY~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53234/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c9da2ff8854339cf09e050c1e8bd092
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:309)
+	at Example.teslaLaunch(Example.java:63)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Example#sauceDemoLaunch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

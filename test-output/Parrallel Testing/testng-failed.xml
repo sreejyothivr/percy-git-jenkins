@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Parrallel Testing]">
-  <test thread-count="5" name="My Test suite2(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [Parrallel Testing]">
+  <test thread-count="2" parallel="methods" name="My Test suite1(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="Example">
         <methods>
           <include name="teslaLaunch"/>
-          <include name="sauceDemoLaunch"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- Example -->
     </classes>
-  </test> <!-- My Test suite2(failed) -->
+  </test> <!-- My Test suite1(failed) -->
 </suite> <!-- Failed suite [Parrallel Testing] -->

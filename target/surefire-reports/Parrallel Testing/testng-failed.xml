@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" name="Failed suite [Parrallel Testing]">
-  <test thread-count="2" parallel="methods" name="My Test suite1(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [Parrallel Testing]" verbose="0">
+  <test thread-count="2" parallel="methods" name="My Test suite1(failed)" verbose="0">
     <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="Example">

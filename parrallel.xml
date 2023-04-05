@@ -1,5 +1,5 @@
-<suite name="Parrallel Testing"  >
-	<test name="My Test suite1" parallel = "methods" thread-count="2" >
+<suite name="Parrallel Testing" parallel = "methods" thread-count="2" >
+	<test name="My Test suite1"  >
 	<parameter name="Browser" value="chrome"></parameter>
  <classes>
       <class name="Example"/>

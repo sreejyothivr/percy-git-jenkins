@@ -50,7 +50,7 @@ public class Example {
 		percy = new Percy(driver);
 		driver.get("https://saucelabs.com/");
 		percy.snapshot("saucedemopage");
-		
+		//driver.close();
 	}
 
 	@Test
@@ -62,6 +62,7 @@ public class Example {
 		driver.get("https://www.qburst.com/");
 		System.out.println(driver.getCurrentUrl());
 		percy.snapshot("Qburst page");
+		//driver.close();
 	}
 
 }
